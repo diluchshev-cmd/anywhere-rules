@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Импорт правил в Anywhere</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: Canvas;
+      color: CanvasText;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+    main {
+      width: min(520px, 100%);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 0 0 16px;
+      line-height: 1.55;
+    }
+    a.button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 20px;
+      border-radius: 10px;
+      background: #0a7cff;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .hint {
+      color: color-mix(in srgb, CanvasText 62%, Canvas);
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Импорт в Anywhere</h1>
+    <p id="status">Подготовка ссылки...</p>
+    <p><a id="open" class="button" href="#" rel="nofollow">Открыть в Anywhere</a></p>
+    <p class="hint">Если приложение не открылось автоматически, нажмите кнопку выше или убедитесь, что Anywhere установлен.</p>
+  </main>
+
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var links = params.getAll("link").filter(Boolean);
+      var status = document.getElementById("status");
+      var button = document.getElementById("open");
+
+      if (!links.length) {
+        status.textContent = "Ссылка на правило не указана.";
+        button.style.display = "none";
+        return;
+      }
+
+      var deepLink = "anywhere://add-rule-set?" + links.map(function (link) {
+        return "link=" + encodeURIComponent(link);
+      }).join("&");
+
+      button.href = deepLink;
+      status.textContent = "Открытие набора правил в приложении Anywhere...";
+
+      setTimeout(function () {
+        window.location.href = deepLink;
+      }, 150);
+    }());
+  </script>
+</body>
+</html>
