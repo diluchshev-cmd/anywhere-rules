@@ -8,42 +8,39 @@
 
 ## Доступные наборы правил
 
-| Набор | Тип | Кол-во правил | Рекомендуемая политика | Описание |
-|---|---|---|---|---|
-| **`RuBlocked.arrs`** | Домены (Suffix) | ~74,700 | **Proxy** | Популярные заблокированные в РФ ресурсы (Antifilter Community + Re:filter). Рекомендуется как основной список. |
-| **`RuBlocked_Community.arrs`** | Домены (Suffix) | ~480 | **Proxy** | Компактный список только ключевых сервисов (Instagram, X/Twitter, Discord, AI, LinkedIn и др.). |
-| **`RuBlocked_IP.arrs`** | IP CIDR | ~88,500 | **Proxy** | Список заблокированных IP-адресов и подсетей. |
-| **`RuBlocked_IP_Community.arrs`** | IP CIDR | ~910 | **Proxy** | Облегченный список заблокированных IP-подсетей сообщества. |
-| **`RuInside.arrs`** | Домены (Suffix) | ~180 | **DIRECT** | Госуслуги, Банки (Сбер, Т-Банк, ВТБ, Альфа), РЖД, Почта, маркетплейсы для прямого подключения в обход VPN. |
+| Набор | Тип | Кол-во правил | Рекомендуемая политика | Прямая ссылка | Быстрый импорт в 1 клик |
+|---|---|---|---|---|---|
+| **`RuBlocked.arrs`** | Домены (Suffix) | ~74,700 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked.arrs) |
+| **`RuBlocked_Community.arrs`** | Домены (Suffix) | ~480 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_Community.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_Community.arrs) |
+| **`RuBlocked_IP.arrs`** | IP CIDR | ~88,500 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_IP.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_IP.arrs) |
+| **`RuBlocked_IP_Community.arrs`** | IP CIDR | ~910 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_IP_Community.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_IP_Community.arrs) |
+| **`RuInside.arrs`** | Домены (Suffix) | ~180 | **DIRECT** (`routing = 1`) | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuInside.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuInside.arrs) |
 
 ---
 
-## Быстрый импорт в Anywhere
+## Описание правил
 
-### Способ 1: В приложении Anywhere по ссылке на Raw-файл
-1. Откройте **Anywhere** на устройстве.
-2. Перейдите в **Settings** (Настройки) -> **Routing Rules** (Правила маршрутизации).
-3. Нажмите **+** (или **Add Rule Set**).
-4. Вставьте ссылку на нужный Raw-файл:
-   - `RuBlocked`: `https://raw.githubusercontent.com/<ВАШ_ЛОГИН>/<РЕПОЗИТОРИЙ>/main/RuBlocked.arrs`
-   - `RuInside`: `https://raw.githubusercontent.com/<ВАШ_ЛОГИН>/<РЕПОЗИТОРИЙ>/main/RuInside.arrs`
-5. Назначьте политику (для `RuBlocked` выберите вашу прокси-группу, для `RuInside` — `DIRECT`).
-
-### Способ 2: Через Deep Link (в один клик)
-Если в настройках репозитория включён **GitHub Pages** (Settings -> Pages -> Branch: `main`), вы можете открывать ссылки прямо в Safari:
-```text
-https://<ВАШ_ЛОГИН>.github.io/<РЕПОЗИТОРИЙ>/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2F<ВАШ_ЛОГИН>%2F<РЕПОЗИТОРИЙ>%2Fmain%2FRuBlocked.arrs
-```
-Либо через протокол Anywhere:
-```text
-anywhere://add-rule-set?link=https://raw.githubusercontent.com/<ВАШ_ЛОГИН>/<РЕПОЗИТОРИЙ>/main/RuBlocked.arrs
-```
+1. **RuBlocked** — популярные заблокированные в РФ ресурсы (Antifilter Community + Re:filter). Рекомендуется как основной список для обхода блокировок.
+2. **RuBlocked_Community** — облегченная версия только для ключевых заблокированных сайтов (Instagram, X/Twitter, Discord, AI-сервисы, LinkedIn, торренты).
+3. **RuBlocked_IP** — список заблокированных IP-адресов и подсетей.
+4. **RuInside** — государственные сервисы, Госуслуги, Банки (Сбер, Т-Банк, ВТБ, Альфа), РЖД, маркетплейсы, чтобы они шли напрямую без прокси (не выдавали капчи и ошибки «Доступ только из РФ»).
 
 ---
 
-## Структура репозитория
+## Как импортировать в Anywhere
 
-- `RuBlocked.arrs`, `RuBlocked_Community.arrs`, `RuBlocked_IP.arrs`, `RuInside.arrs` — готовые файлы правил.
-- `import.html` — страница-редирект для быстрого добавления правил через браузер в Anywhere.
-- `generate.py` / `generate.ps1` — скрипты конвертации из исходников runetfreedom.
-- `.github/workflows/update.yml` — GitHub Action для автоматического обновления правил по расписанию.
+### Вариант 1: В 1 клик через Safari
+Откройте страницу репозитория или нажмите ссылку **Импортировать** в таблице выше. Страница автоматически предложит открыть приложение Anywhere и добавить правило.
+
+Либо используйте прямую ссылку URL scheme:
+```text
+anywhere://add-rule-set?link=https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs
+```
+
+### Вариант 2: Вручную в приложении Anywhere
+1. Откройте **Anywhere**.
+2. Перейдите в **Settings** -> **Routing Rules** -> нажмите **+** (или **Add Rule Set**).
+3. Вставьте ссылку на файл:
+   - Для заблокированных сайтов: `https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs`
+   - Для прямого трафика РФ (Госуслуги, банки): `https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuInside.arrs`
+4. Для `RuBlocked` выберите политику **Proxy** (или вашу группу прокси). Для `RuInside` политика **DIRECT** применится автоматически.
