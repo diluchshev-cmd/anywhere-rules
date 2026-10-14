@@ -1,7 +1,8 @@
-﻿# NAME: RuServices
+# NAME: RuServices
 # GENERATED-FOR: Anywhere Routing Rule Set
-# DESCRIPTION: Russian services with geo-restrictions (Gosuslugi, Banks, Streaming, RZD -> RU Proxy)
-# RULES: 246
+# DESCRIPTION: Russian services with geo-restrictions (Gosuslugi, Banks, Streaming, RZD -> assign to RU Proxy)
+# RULES: 245
+# SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-domains-list/main/ru-available-only-inside + https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-gov-ru
 
 name = RuServices
 2, 1tv.ru
@@ -45,14 +46,14 @@ name = RuServices
 2, duma.gov.ru
 2, dzen.ru
 2, dzvr.ru
+2, e-yakutia.ru
 2, ebs.ru
+2, edu-74.ru
 2, edu.ru
 2, edu22.info
-2, edu-74.ru
 2, egrul.nalog.ru
 2, ekburg.ru
 2, emias.info
-2, e-yakutia.ru
 2, fssp.gov.ru
 2, gazprombank.ru
 2, gibdd.ru
@@ -102,8 +103,8 @@ name = RuServices
 2, leroymerlin.ru
 2, lipetsk.ru
 2, magadan.ru
-2, mari.ru
 2, mari-el.ru
+2, mari.ru
 2, marine.ru
 2, matchtv.ru
 2, megamarket.ru
@@ -168,8 +169,8 @@ name = RuServices
 2, russianpost.ru
 2, rutube.ru
 2, ryazan.ru
-2, rzd.ru
 2, rzd-bonus.ru
+2, rzd.ru
 2, s7.ru
 2, sakhalin.ru
 2, samara.ru
@@ -215,7 +216,6 @@ name = RuServices
 2, uralairlines.ru
 2, uslugi.mosreg.ru
 2, utair.ru
-2, vestikavkaza.ru
 2, vl.ru
 2, vladikavkaz.ru
 2, vladimir.ru

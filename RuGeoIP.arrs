@@ -1,9 +1,8 @@
-﻿# NAME: RuGeoIP
+# NAME: RuGeoIP
 # GENERATED-FOR: Anywhere Routing Rule Set
-# DESCRIPTION: All Russian IP subnets (GeoIP RU -> RU Proxy)
+# DESCRIPTION: All Russian IP subnets (GeoIP RU for access from abroad)
 # RULES: 25171
-# SOURCES:
-# - https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/surge/ru.txt
+# SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/surge/ru.txt
 
 name = RuGeoIP
 0, 2.16.20.0/23

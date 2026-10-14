@@ -2,8 +2,7 @@
 # GENERATED-FOR: Anywhere Routing Rule Set
 # DESCRIPTION: Popular blocked Russian domains (antifilter-community + re:filter)
 # RULES: 74739
-# SOURCES:
-# - https://raw.githubusercontent.com/runetfreedom/russia-blocked-geosite/release/ru-blocked.txt
+# SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-blocked-geosite/release/ru-blocked.txt
 
 name = RuBlocked
 2, 0.torlink.site
