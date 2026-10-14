@@ -1,12 +1,11 @@
-﻿# NAME: RuBlocked_IP_Community
+# NAME: RuBlocked_IP_Community
 # GENERATED-FOR: Anywhere Routing Rule Set
-# DESCRIPTION: Blocked community IP CIDRs in Russia
+# DESCRIPTION: Blocked community IPv4 and IPv6 CIDRs in Russia
 # RULES: 910
 # SOURCES:
 # - https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/surge/ru-blocked-community.txt
 
 name = RuBlocked_IP_Community
-routing = 0
 0, 1.1.1.1/32
 0, 2.16.19.0/24
 0, 2.16.70.0/23

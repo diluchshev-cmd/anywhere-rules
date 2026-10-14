@@ -1,10 +1,9 @@
-﻿# NAME: RuInside
+# NAME: RuInside
 # GENERATED-FOR: Anywhere Routing Rule Set
-# DESCRIPTION: Russian domestic and government services (Direct connection)
-# RULES: 178
+# DESCRIPTION: Russian domestic services & government portals (Direct connection)
+# RULES: 184
 # SOURCES:
-# - https://raw.githubusercontent.com/runetfreedom/russia-domains-list/main/ru-available-only-inside
-# - https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-gov-ru
+# - https://raw.githubusercontent.com/runetfreedom/russia-domains-list/main/ru-available-only-inside + https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-gov-ru
 
 name = RuInside
 routing = 1
@@ -14,6 +13,7 @@ routing = 1
 2, amur.ru
 2, arkhangelsk.ru
 2, astrakhan.ru
+2, avito.ru
 2, avtodor-tr.ru
 2, bashkiria.ru
 2, belgorod.ru
@@ -33,14 +33,15 @@ routing = 1
 2, cikrf.ru
 2, crimea.ru
 2, dagestan.ru
+2, dzen.ru
 2, dzvr.ru
+2, e-yakutia.ru
 2, ebs.ru
+2, edu-74.ru
 2, edu.ru
 2, edu22.info
-2, edu-74.ru
 2, ekburg.ru
 2, emias.info
-2, e-yakutia.ru
 2, gazprombank.ru
 2, goskey.ru
 2, gosuslugi.ru
@@ -82,8 +83,9 @@ routing = 1
 2, leroymerlin.ru
 2, lipetsk.ru
 2, magadan.ru
-2, mari.ru
+2, mail.ru
 2, mari-el.ru
+2, mari.ru
 2, marine.ru
 2, mgfoms.ru
 2, mil.ru
@@ -102,6 +104,7 @@ routing = 1
 2, nov.ru
 2, novosibirsk.ru
 2, nsk.ru
+2, ok.ru
 2, omsk.ru
 2, onelya.ru
 2, ooc-school.ru
@@ -126,8 +129,8 @@ routing = 1
 2, rshb.ru
 2, russianpost.ru
 2, ryazan.ru
-2, rzd.ru
 2, rzd-bonus.ru
+2, rzd.ru
 2, sakhalin.ru
 2, samara.ru
 2, saratov.ru
@@ -158,6 +161,7 @@ routing = 1
 2, udm.ru
 2, udmurtia.ru
 2, ulan-ude.ru
+2, vk.com
 2, vl.ru
 2, vladikavkaz.ru
 2, vladimir.ru
@@ -170,6 +174,7 @@ routing = 1
 2, vrn.ru
 2, vtb.ru
 2, vyatka.ru
+2, wildberries.ru
 2, xn--80acgfbsl1azdqr.xn--p1ai
 2, xn--80ajghhoc2aj1c8b.xn--p1ai
 2, xn--90aijkdmaud0d.xn--p1ai

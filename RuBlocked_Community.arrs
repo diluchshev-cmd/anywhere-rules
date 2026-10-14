@@ -1,24 +1,23 @@
-﻿# NAME: RuBlocked_Community
+# NAME: RuBlocked_Community
 # GENERATED-FOR: Anywhere Routing Rule Set
-# DESCRIPTION: Blocked popular Russian domains community list
+# DESCRIPTION: Blocked popular Russian domains community list (antifilter.download)
 # RULES: 484
 # SOURCES:
 # - https://raw.githubusercontent.com/runetfreedom/russia-blocked-geosite/release/antifilter-download-community.txt
 
 name = RuBlocked_Community
-routing = 0
 2, 10minutemail.com
 2, 1337x.to
 2, 4pda.to
 2, 7tv.app
 2, ab.chatgpt.com
 2, abook-club.ru
-2, abs.twimg.com
 2, abs-0.twimg.com
 2, abs-zero.twimg.com
+2, abs.twimg.com
+2, account-api.protonmail.com
 2, account.jetbrains.com
 2, account.protonmail.com
-2, account-api.protonmail.com
 2, accounts.spotify.com
 2, accounts.supercell.com
 2, adblockplus.org
@@ -108,8 +107,8 @@ routing = 0
 2, cub.red
 2, czx.to
 2, d.docs.live.net
-2, database.clamav.net
 2, data-cdn.mbamupdates.com
+2, database.clamav.net
 2, debian.map.fastlydns.net
 2, deepl.com
 2, deezer.com
@@ -343,8 +342,8 @@ routing = 0
 2, ru.euronews.com
 2, ru.iherb.com
 2, ru.krymr.com
-2, rus.delfi.lv
 2, rus-media.org
+2, rus.delfi.lv
 2, rustorka.com
 2, rutor.info
 2, rutor.is
@@ -375,10 +374,10 @@ routing = 0
 2, soundcloud.com
 2, spotify.com
 2, st.kinovod.net
+2, static-ss.xvideos-cdn.com
 2, static.cdninstagram.com
 2, static.files.bbci.co.uk
 2, static.rutracker.cc
-2, static-ss.xvideos-cdn.com
 2, status.discordapp.com
 2, store.supercell.com
 2, strava.com
@@ -469,8 +468,8 @@ routing = 0
 2, www.smashwords.com
 2, www.stalker2.com
 2, www.support.xerox.com
-2, www.themoviedb.org
 2, www.the-village.ru
+2, www.themoviedb.org
 2, www.ti.com
 2, www.torproject.org
 2, www.wikiart.org
