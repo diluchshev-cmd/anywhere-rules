@@ -1,46 +1,46 @@
 # Anywhere Routing Rule Sets (Russia / Runetfreedom)
 
-Автоматически обновляемые наборы правил маршрутизации в нативном формате `.arrs` для клиента [Anywhere](https://github.com/NodePassProject/Anywhere) (iOS / iPadOS / macOS), сконвертированные из базы [runetfreedom/russia-v2ray-rules-dat](https://github.com/runetfreedom/russia-v2ray-rules-dat).
+Наборы правил маршрутизации в нативном формате `.arrs` для клиента [Anywhere](https://github.com/NodePassProject/Anywhere) (iOS / iPadOS / macOS), сконвертированные из базы [runetfreedom/russia-v2ray-rules-dat](https://github.com/runetfreedom/russia-v2ray-rules-dat).
 
 Правила автоматически синхронизируются через GitHub Actions дважды в сутки.
 
 ---
 
-## Доступные наборы правил
+## 🌍 СЦЕНАРИЙ 1: Вы находитесь ВНЕ России (Доступ к сайтам РФ)
 
-| Набор | Тип | Кол-во правил | Рекомендуемая политика | Прямая ссылка | Быстрый импорт в 1 клик |
-|---|---|---|---|---|---|
-| **`RuBlocked.arrs`** | Домены (Suffix) | ~74,700 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked.arrs) |
-| **`RuBlocked_Community.arrs`** | Домены (Suffix) | ~480 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_Community.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_Community.arrs) |
-| **`RuBlocked_IP.arrs`** | IP CIDR | ~88,500 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_IP.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_IP.arrs) |
-| **`RuBlocked_IP_Community.arrs`** | IP CIDR | ~910 | **Proxy** | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_IP_Community.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_IP_Community.arrs) |
-| **`RuInside.arrs`** | Домены (Suffix) | ~180 | **DIRECT** (`routing = 1`) | [Скачать Raw](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuInside.arrs) | [Импортировать](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuInside.arrs) |
+Если вы за границей, ваш основной интернет должен работать быстро и напрямую (**DIRECT**), а через российский прокси (**RU Proxy**) должны открываться только государственные сайты, банки, стриминги и сервисы, требующие IP РФ.
 
----
+### Рекомендуемые наборы:
 
-## Описание правил
-
-1. **RuBlocked** — популярные заблокированные в РФ ресурсы (Antifilter Community + Re:filter). Рекомендуется как основной список для обхода блокировок.
-2. **RuBlocked_Community** — облегченная версия только для ключевых заблокированных сайтов (Instagram, X/Twitter, Discord, AI-сервисы, LinkedIn, торренты).
-3. **RuBlocked_IP** — список заблокированных IP-адресов и подсетей.
-4. **RuInside** — государственные сервисы, Госуслуги, Банки (Сбер, Т-Банк, ВТБ, Альфа), РЖД, маркетплейсы, чтобы они шли напрямую без прокси (не выдавали капчи и ошибки «Доступ только из РФ»).
+| Набор | Что входит | Куда направить в Anywhere | Импорт в 1 клик | Прямая ссылка |
+|---|---|---|---|---|
+| **`RuServices.arrs`** ⭐ *(Рекомендуется)* | **Только сервисы с гео-блоком:** Госуслуги, Налоговая, Мос.ру, Банки (Сбер, Т-Банк, ВТБ, Альфа), РЖД, Аэрофлот, Кинопоиск, Иви, ТВ, Авито и др. (~250 доменов) | **Ваш RU Прокси** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuServices.arrs) | [`RuServices.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuServices.arrs) |
+| **`RuAll.arrs`** | **Вообще все сайты РФ:** все домены зон `.ru`, `.рф`, `.su` + сервисы РФ на других доменах (VK, Дзен, Mail.ru и др.) | **Ваш RU Прокси** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuAll.arrs) | [`RuAll.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuAll.arrs) |
+| **`RuGeoIP.arrs`** | **Все российские IP-подсети:** ~25 000 диапазонов IP РФ (полезно, если мобильные приложения банков обращаются по прямым IP) | **Ваш RU Прокси** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuGeoIP.arrs) | [`RuGeoIP.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuGeoIP.arrs) |
 
 ---
 
-## Как импортировать в Anywhere
+## 🛡️ СЦЕНАРИЙ 2: Вы находитесь В России (Обход блокировок)
 
-### Вариант 1: В 1 клик через Safari
-Откройте страницу репозитория или нажмите ссылку **Импортировать** в таблице выше. Страница автоматически предложит открыть приложение Anywhere и добавить правило.
+Если вы находитесь в РФ и хотите открывать заблокированные ресурсы через зарубежный прокси:
 
-Либо используйте прямую ссылку URL scheme:
-```text
-anywhere://add-rule-set?link=https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs
-```
+| Набор | Что входит | Куда направить в Anywhere | Импорт в 1 клик | Прямая ссылка |
+|---|---|---|---|---|
+| **`RuBlocked.arrs`** | Полный список заблокированных доменов (~75 000 доменов) | **Зарубежный Proxy** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked.arrs) | [`RuBlocked.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs) |
+| **`RuBlocked_Community.arrs`** | Только основные заблокированные сервисы (Instagram, X, Discord, AI, трекеры) | **Зарубежный Proxy** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_Community.arrs) | [`RuBlocked_Community.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_Community.arrs) |
+| **`RuBlocked_IP.arrs`** | Список заблокированных IP-адресов (~88 000 правил) | **Зарубежный Proxy** | [**Импортировать**](https://diluchshev-cmd.github.io/anywhere-rules/import.html?link=https%3A%2F%2Fraw.githubusercontent.com%2Fdiluchshev-cmd%2Fanywhere-rules%2Fmain%2FRuBlocked_IP.arrs) | [`RuBlocked_IP.arrs`](https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked_IP.arrs) |
 
-### Вариант 2: Вручную в приложении Anywhere
-1. Откройте **Anywhere**.
-2. Перейдите в **Settings** -> **Routing Rules** -> нажмите **+** (или **Add Rule Set**).
-3. Вставьте ссылку на файл:
-   - Для заблокированных сайтов: `https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuBlocked.arrs`
-   - Для прямого трафика РФ (Госуслуги, банки): `https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuInside.arrs`
-4. Для `RuBlocked` выберите политику **Proxy** (или вашу группу прокси). Для `RuInside` политика **DIRECT** применится автоматически.
+---
+
+## ⚙️ Пошаговая настройка в Anywhere для тех, кто за границей
+
+1. В Anywhere добавьте ваш **Российский прокси** в список серверов / узлов.
+2. Откройте **Settings** -> **Routing Rules** (Правила маршрутизации).
+3. Добавьте правило **`RuServices`** (или **`RuAll`**):
+   - Либо кликните по ссылке **Импортировать** выше.
+   - Либо нажмите **+** и вставьте URL:
+     `https://raw.githubusercontent.com/diluchshev-cmd/anywhere-rules/main/RuServices.arrs`
+4. В поле назначения для этого правила выберите **ваш Российский сервер/прокси**.
+5. Убедитесь, что для остального трафика (Default Policy) стоит **DIRECT**:
+   - Весь ваш обычный трафик (YouTube, Google, локальные сайты) пойдёт напрямую без задержек.
+   - Все Госуслуги, банки и российские сервисы пойдут через ваш российский сервер!
