@@ -1,7 +1,7 @@
 # NAME: RuServices
 # GENERATED-FOR: Anywhere Routing Rule Set
 # DESCRIPTION: Russian services with geo-restrictions (Gosuslugi, Banks, Streaming, RZD -> assign to RU Proxy)
-# RULES: 245
+# RULES: 248
 # SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-domains-list/main/ru-available-only-inside + https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-gov-ru
 
 name = RuServices
@@ -118,6 +118,7 @@ name = RuServices
 2, mosenergosbyt.ru
 2, mosobleirc.ru
 2, mosoblgaz.ru
+2, mospat.ru
 2, mosreg.ru
 2, murmansk.ru
 2, nalchik.ru
@@ -143,6 +144,7 @@ name = RuServices
 2, ozone.ru
 2, ozonusercontent.com
 2, pass.rzd.ru
+2, patriarchia.ru
 2, penza.ru
 2, perm.ru
 2, pesc.ru
@@ -158,6 +160,7 @@ name = RuServices
 2, pskov.ru
 2, ptz.ru
 2, raiffeisen.ru
+2, regionvideo.ru
 2, rencredit.ru
 2, rkomi.ru
 2, rnd.ru

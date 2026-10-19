@@ -1,7 +1,7 @@
 # NAME: RuAll
 # GENERATED-FOR: Anywhere Routing Rule Set
 # DESCRIPTION: All Russian TLDs (.ru, .рф, .su) and services (assign to RU Proxy)
-# RULES: 254
+# RULES: 257
 # SOURCE: All RU zones + services
 
 name = RuAll
@@ -119,6 +119,7 @@ name = RuAll
 2, mosenergosbyt.ru
 2, mosobleirc.ru
 2, mosoblgaz.ru
+2, mospat.ru
 2, mosreg.ru
 2, murmansk.ru
 2, my.games
@@ -146,6 +147,7 @@ name = RuAll
 2, ozone.ru
 2, ozonusercontent.com
 2, pass.rzd.ru
+2, patriarchia.ru
 2, penza.ru
 2, perm.ru
 2, pesc.ru
@@ -161,6 +163,7 @@ name = RuAll
 2, pskov.ru
 2, ptz.ru
 2, raiffeisen.ru
+2, regionvideo.ru
 2, rencredit.ru
 2, rkomi.ru
 2, rnd.ru
