@@ -1,7 +1,7 @@
 # NAME: RuBlocked_Community
 # GENERATED-FOR: Anywhere Routing Rule Set
 # DESCRIPTION: Blocked popular Russian domains community list (antifilter.download)
-# RULES: 484
+# RULES: 485
 # SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-blocked-geosite/release/antifilter-download-community.txt
 
 name = RuBlocked_Community
@@ -285,6 +285,7 @@ name = RuBlocked_Community
 2, onlineradiobox.com
 2, onlinesim.ru
 2, open.spotify.com
+2, openrouter.ai
 2, openwrt.wk.cz
 2, orbit-games.com
 2, os.mbed.com
