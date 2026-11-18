@@ -1,7 +1,7 @@
 # NAME: RuBlocked_IP
 # GENERATED-FOR: Anywhere Routing Rule Set
 # DESCRIPTION: Blocked IPv4 and IPv6 CIDRs in Russia
-# RULES: 88587
+# RULES: 88585
 # SOURCE: https://raw.githubusercontent.com/runetfreedom/russia-blocked-geoip/release/surge/ru-blocked.txt
 
 name = RuBlocked_IP
@@ -19196,10 +19196,8 @@ name = RuBlocked_IP
 0, 57.128.212.102/32
 0, 57.129.28.42/32
 0, 57.129.45.176/32
-0, 57.141.0.0/20
-0, 57.141.16.0/21
-0, 57.141.24.0/22
-0, 57.141.28.0/23
+0, 57.141.0.0/19
+0, 57.141.32.0/23
 0, 57.144.0.0/14
 0, 57.180.0.79/32
 0, 58.64.137.69/32
